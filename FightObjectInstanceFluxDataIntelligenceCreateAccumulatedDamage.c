@@ -1,0 +1,3 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateAccumulatedDamage(){
+return(FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceAccumulatedDamageIdentifier));
+}

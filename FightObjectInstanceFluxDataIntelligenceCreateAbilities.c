@@ -1,0 +1,3 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateAbilities(){
+return(FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceAbilitiesIdentifier));
+}

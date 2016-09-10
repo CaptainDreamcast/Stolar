@@ -1,0 +1,3 @@
+uint8 FightObjectsSingleObjectSingleInstanceIntelligenceEnemyStateMachinePlayerIsInAttackRangeRange(FightStruct* FightData, uint8 WhichObject, uint8 WhichInstance){
+return(LogicActiveNot);
+}

@@ -1,0 +1,11 @@
+ComeOutSwingingBoundEnemyStruct* ComeOutSwingingAddNewEnemiesToProcessingAddToProcessingListBoundEnemyDataCreate(FightObjectInstanceStruct* EnemyObjectInstanceData){
+ComeOutSwingingBoundEnemyStruct* ComeOutSwingingBoundEnemyData;
+
+ComeOutSwingingBoundEnemyData = (ComeOutSwingingBoundEnemyStruct*)malloc(sizeof(ComeOutSwingingBoundEnemyStruct));
+
+ComeOutSwingingBoundEnemyData->WhichObject = EnemyObjectInstanceData->Object->LogicData.WhichObject;
+ComeOutSwingingBoundEnemyData->WhichInstance = EnemyObjectInstanceData->LogicData.WhichInstance;
+ComeOutSwingingBoundEnemyData->Ticks = NewTicksStandardValue;
+
+return(ComeOutSwingingBoundEnemyData);
+}

@@ -1,0 +1,14 @@
+uint32 FightLoadObjectInstanceCreateFluxDataIntelligenceEnemy(FightStruct* FightData, FightEnemyGivenStruct* FightEnemyGivenData, uint32 CurrentPointerPosition, uint8 WhichObject, uint8 WhichInstance, uint8 WhichEnemy){
+
+uint8 CurrentIntelligence;
+
+FightData->ObjectData[WhichObject].Instance[WhichInstance].Intelligence = (FightObjectInstanceIntelligenceStruct*)malloc(sizeof(FightObjectInstanceIntelligenceStruct)*FightData->ObjectData[WhichObject].Instance[WhichInstance].Loadable->IntelligenceAmount);
+
+CurrentIntelligence = 0;
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateAccumulatedDamage());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateForcesToAcceleration());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateEnemyStateMachine());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateHitLogicEnemy());
+
+return(CurrentPointerPosition);
+}

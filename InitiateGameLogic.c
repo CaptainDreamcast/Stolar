@@ -1,0 +1,4 @@
+#define InitiateGameLogic() { \
+InitiateStreamingLoad(); \
+SetDummyControllerState(); \
+}

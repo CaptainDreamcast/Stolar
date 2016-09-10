@@ -1,0 +1,3 @@
+#define TileLogicPost(TileData, OverWorldData)		{ \
+ \
+}

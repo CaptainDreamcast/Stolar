@@ -1,0 +1,5 @@
+void FightStage(FightStruct* FightData){
+
+
+
+}

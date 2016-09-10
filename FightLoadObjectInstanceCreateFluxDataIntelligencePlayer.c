@@ -1,0 +1,18 @@
+
+
+void FightLoadObjectInstanceCreateFluxDataIntelligencePlayer(FightStruct* FightData, uint8 WhichObject, uint8 WhichInstance, uint8 WhichCrewMember){
+
+uint8 CurrentIntelligence;
+
+FightData->ObjectData[WhichObject].Instance[WhichInstance].Intelligence = (FightObjectInstanceIntelligenceStruct*)malloc(sizeof(FightObjectInstanceIntelligenceStruct)*FightData->ObjectData[WhichObject].Instance[WhichInstance].Loadable->IntelligenceAmount);
+
+CurrentIntelligence = 0;
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreatePlayerGetInput());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateStairWayToHeaven());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateMovementPlayer());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateAbilities());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateAccumulatedDamage());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateForcesToAcceleration());
+FightObjectInstanceFluxDataIntelligenceAdd(CurrentIntelligence, FightObjectInstanceFluxDataIntelligenceCreateHitLogicPlayer());
+
+}

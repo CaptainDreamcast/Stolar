@@ -1,0 +1,6 @@
+
+
+
+void FightDeLoad(FightStruct* FightData){
+
+}

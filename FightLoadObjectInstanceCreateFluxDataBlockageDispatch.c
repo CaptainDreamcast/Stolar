@@ -1,0 +1,18 @@
+#define FightLoadObjectInstanceCreateFluxDataBlockageArguments			FightStruct* FightData, uint32 CurrentPointerPosition, uint8 WhichObject, uint8 WhichInstance
+
+uint32 FightLoadObjectInstanceCreateFluxDataBlockageDispatchNone(FightLoadObjectInstanceCreateFluxDataBlockageArguments){
+return(CurrentPointerPosition);
+}
+
+
+uint32 FightLoadObjectInstanceCreateFluxDataBlockageDispatchBox(FightLoadObjectInstanceCreateFluxDataBlockageArguments){
+LoadSetThisToThatPointer(void*, FightData->ObjectData[WhichObject].Instance[WhichInstance].FluxData.Blockage, sizeof(BoxStruct));
+return(CurrentPointerPosition);
+}
+
+uint32 (*FightLoadObjectInstanceCreateFluxDataBlockageDispatch[FightObjectsSingleObjectSingleInstanceBlockageFunctionAmount])(FightLoadObjectInstanceCreateFluxDataBlockageArguments) = 
+{
+FightLoadObjectInstanceCreateFluxDataBlockageDispatchNone, 
+FightLoadObjectInstanceCreateFluxDataBlockageDispatchBox
+};
+

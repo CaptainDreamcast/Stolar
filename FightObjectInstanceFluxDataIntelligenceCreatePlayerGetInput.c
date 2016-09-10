@@ -1,0 +1,3 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreatePlayerGetInput(){
+return(FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligencePlayerGetInputIdentifier));
+}

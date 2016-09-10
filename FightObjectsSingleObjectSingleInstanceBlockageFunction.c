@@ -1,0 +1,18 @@
+#define FightObjectsSingleObjectSingleInstanceBlockageFunctionAmount	2
+#define FightObjectsSingleObjectSingleInstanceBlockageArguments			FightStruct* FightData, uint8 WhichObject, uint8 WhichInstance, float PositionX, float StagePositionZ
+
+uint8 FightObjectsSingleObjectSingleInstanceBlockageFunctionNone(FightObjectsSingleObjectSingleInstanceBlockageArguments){
+return(LogicActiveNot);
+}
+
+
+uint8 FightObjectsSingleObjectSingleInstanceBlockageFunctionBox(FightObjectsSingleObjectSingleInstanceBlockageArguments){
+return(BoxCheckIfPointInside((BoxStruct*)FightData->ObjectData[WhichObject].Instance[WhichInstance].FluxData.Blockage, PositionX, StagePositionZ));
+}
+
+uint8 (*FightObjectsSingleObjectSingleInstanceBlockageFunction[FightObjectsSingleObjectSingleInstanceBlockageFunctionAmount])(FightObjectsSingleObjectSingleInstanceBlockageArguments) = 
+{
+FightObjectsSingleObjectSingleInstanceBlockageFunctionNone, 
+FightObjectsSingleObjectSingleInstanceBlockageFunctionBox
+};
+

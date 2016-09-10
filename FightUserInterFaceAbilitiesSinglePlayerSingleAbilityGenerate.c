@@ -1,0 +1,6 @@
+void FightUserInterFaceAbilitiesSinglePlayerSingleAbilityGenerate(FightStruct* FightData, uint8 WhichPlayer, uint8 WhichAbility){
+
+FightUserInterFaceAbilitiesSinglePlayerSingleAbilityGenerateColor(FightData, WhichPlayer, WhichAbility);
+FightUserInterFaceAbilitiesSinglePlayerSingleAbilityGenerateTexture(FightData, WhichPlayer, WhichAbility);
+FightUserInterFaceAbilitiesSinglePlayerSingleAbilityGenerateUpdate(FightData, WhichPlayer, WhichAbility);
+}

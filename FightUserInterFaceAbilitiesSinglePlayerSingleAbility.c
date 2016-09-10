@@ -1,0 +1,6 @@
+void FightUserInterFaceAbilitiesSinglePlayerSingleAbility(FightStruct* FightData, uint8 WhichPlayer, uint8 WhichAbility){
+
+FightUserInterFaceAbilitiesSinglePlayerSingleAbilityGenerate(FightData, WhichPlayer, WhichAbility);
+FightUserInterFaceAbilitiesSinglePlayerSingleAbilityDraw(FightData, WhichPlayer, WhichAbility);
+
+}

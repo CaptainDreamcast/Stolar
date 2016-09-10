@@ -1,0 +1,3 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateForcesToAcceleration(){
+return(FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceForcesToAccelerationIdentifier));
+}

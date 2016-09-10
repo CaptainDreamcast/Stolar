@@ -1,0 +1,3 @@
+void FightObjectsSingleObjectFunctions(FightData, WhichObject){
+
+}

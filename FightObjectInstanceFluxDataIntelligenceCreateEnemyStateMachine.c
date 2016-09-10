@@ -1,0 +1,8 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateEnemyStateMachine(){
+FightObjectInstanceIntelligenceStruct ReturnData;
+
+ReturnData = FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceEnemyStateMachineIdentifier);
+ReturnData.Buffer = FightObjectInstanceFluxDataIntelligenceCreateEnemyStateMachineBuffer();
+
+return(ReturnData);
+}

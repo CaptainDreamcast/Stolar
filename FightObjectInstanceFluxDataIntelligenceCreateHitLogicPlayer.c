@@ -1,0 +1,12 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateHitLogicPlayer(){
+FightObjectInstanceIntelligenceStruct ReturnData;
+FightObjectsSingleObjectSingleInstanceIntelligenceHitLogicPlayerStruct* Data;
+
+ReturnData = FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceHitLogicPlayerIdentifier);
+ReturnData.Buffer = malloc(sizeof(FightObjectsSingleObjectSingleInstanceIntelligenceHitLogicPlayerStruct));
+Data = (FightObjectsSingleObjectSingleInstanceIntelligenceHitLogicPlayerStruct*)ReturnData.Buffer;
+Data->LogicData.Active = LogicActiveNot;
+
+
+return(ReturnData);
+}

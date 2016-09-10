@@ -1,0 +1,3 @@
+FightObjectInstanceIntelligenceStruct FightObjectInstanceFluxDataIntelligenceCreateStairWayToHeaven(){
+return(FightObjectInstanceFluxDataIntelligenceCreateDataLess(FightObjectsSingleObjectSingleInstanceIntelligenceStairWayToHeavenIdentifier));
+}
